@@ -10,9 +10,10 @@ function mincost(arr)
 		 arr.push(first+second);
 	  rec(arr);
 	 }
-	console.log(sum);
-	 return
+	
+
  }
 	rec(arr);
+	console.log(sum);
 }
 module.exports=mincost;
