@@ -4,8 +4,8 @@ function mincost(arr)
  function rec(arr){
 	 if (arr.length>1){
 	 arr=arr.sort();
-	 first=arr.shift();
-	 second=arr.shift();
+	let  first=arr.shift();
+	let  second=arr.shift();
 	 sum += first+second;
 		 arr.push(first+second);
 	  rec(arr);
@@ -13,5 +13,6 @@ function mincost(arr)
 	console.log(sum);
 	 return
  }
+	rec(arr);
 }
 module.exports=mincost;
